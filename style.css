@@ -9,12 +9,13 @@
 section {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    height: 300px;
+    width: 300px;
+    margin-left: 40%;
 }
 
 section>* {
     /*needs refactoring to fix stretch*/
-
     flex: 2 0 25%;
 }
 
