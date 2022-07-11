@@ -5,6 +5,7 @@
 .light_container {
     width: 80px;
     height: 80px;
+    margin: 10px;
 }
 
 .light_bulb {
