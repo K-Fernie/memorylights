@@ -1,3 +1,7 @@
+:root {
+    --box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -6,6 +10,7 @@
     width: 80px;
     height: 80px;
     margin: 10px;
+    box-shadow: var(--box-shadow);
 }
 
 .light_bulb {
