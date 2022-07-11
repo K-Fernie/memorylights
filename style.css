@@ -6,10 +6,24 @@
     box-sizing: border-box;
 }
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+section>* {
+    /*needs refactoring to fix stretch*/
+
+    flex: 2 0 25%;
+}
+
 .light_container {
+
     width: 80px;
     height: 80px;
     margin: 10px;
+
 
 }
 
@@ -19,6 +33,7 @@
     border-radius: 50%;
     border: 2px solid white;
     box-shadow: var(--box-shadow);
+
 }
 
 main {
