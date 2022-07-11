@@ -2,35 +2,29 @@
     --box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
 }
 
-* {
-    box-sizing: border-box;
-}
 
 section {
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
-    width: 300px;
-    margin-left: 40%;
+    height: 600px;
+    width: 600px;
+    margin-left: 25%;
 }
 
 section>* {
     /*needs refactoring to fix stretch*/
-    flex: 2 0 25%;
+    flex: 1 0 25%;
 }
 
 .light_container {
-
     width: 80px;
     height: 80px;
     margin: 10px;
-
-
 }
 
 .light_bulb {
-    width: 100%;
-    height: 100%;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: 2px solid white;
     box-shadow: var(--box-shadow);
@@ -46,20 +40,35 @@ main {
     .light_bulb {
         height: 50px;
         width: 50px;
-        border-radius: 50%;
         border: 1px solid blue;
-        box-shadow: var(--box-shadow);
     }
 }
 
-@media screen and (max-width:768px) and (min-width: 575px) {
+@media screen and (max-width:768px) and (min-width: 577px) {
 
     .light_bulb {
         height: 80px;
         width: 80px;
-        border-radius: 50%;
         border: 2px solid teal;
-        box-shadow: var(--box-shadow);
     }
 
+}
+
+@media screen and (max-width: 992px) and (min-width:769px) {
+
+    .light_bulb {
+        height: 150px;
+        width: 150px;
+        border: 3px solid red;
+    }
+
+}
+
+@media screen and (min-width: 993px) {
+
+    .light_bulb {
+        height: 200px;
+        width: 200px;
+        border: 4px solid pink;
+    }
 }
