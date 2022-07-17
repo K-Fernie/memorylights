@@ -10,17 +10,45 @@ html {
   box-sizing: border-box;
 }
 
-section {
+header {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#bulb_section {
   display: flex;
   flex-wrap: wrap;
   height: 700px;
   width: 700px;
-  margin-top: 10%;
+
   margin-left: 25%;
 }
 
-section > * {
+#bulb_section > * {
   flex: 1 0 25%;
+}
+
+.start_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+#start_btn {
+  height: 50px;
+  width: 250px;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  box-shadow: var(--box-shadow);
+  font-weight: 400;
+  border-radius: 0.25rem;
 }
 
 .light_container {
