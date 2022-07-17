@@ -42,7 +42,7 @@ function checkWin() {
   } else if (userClicks.length == 3) {
     if (userClicks[2] == randArray3[2]) {
       gameInstruction.innerText = `You won!!
-      click "Start Game" if you would like to play again`;
+      Click "Start Game" if you would like to play again`;
       resetGame();
     } else {
       lost();
