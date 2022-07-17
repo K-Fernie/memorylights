@@ -1,3 +1,5 @@
+let userClicks = [];
+
 //window.onload = function;
 function bulbCreation() {
   for (i = 0; i < 9; i++) {
@@ -6,6 +8,9 @@ function bulbCreation() {
     var newDiv = document.createElement("div");
     newDiv.setAttribute("class", "light_container");
     newDiv.innerHTML = `<span class="material-symbols-outlined light_bulb">lightbulb</span>`;
+    newDiv.addEventListener("click", () => {
+      console.log(newDiv);
+    });
     //append new div to the bulb section
     bulbSection.appendChild(newDiv);
   }
@@ -23,7 +28,7 @@ function round1() {
   randArray3.forEach((element, i) => {
     setTimeout(() => {
       let bulb = allLights.item(element);
-      bulb.style.color = "yellow";
+      bulb.style.color = "LightYellow";
 
       setTimeout(function () {
         bulb.style.color = "black";
