@@ -25,8 +25,6 @@ function resetGame() {
 }
 
 function checkWin() {
-  win = false;
-
   if (userClicks.length == 1) {
     if (userClicks[0] == randArray3[0]) {
       gameInstruction.innerText = "Good Start, two more to go!";
